@@ -1,0 +1,2 @@
+module KatakanaCharactersHelper
+end

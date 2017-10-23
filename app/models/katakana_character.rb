@@ -1,0 +1,2 @@
+class KatakanaCharacter < ApplicationRecord
+end
