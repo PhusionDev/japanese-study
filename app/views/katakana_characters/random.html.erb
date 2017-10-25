@@ -1,1 +1,12 @@
-<%= @random_character.character + " - " + @random_character.roumaji %>
+<div class="row">
+  <div class="col-md-12">
+    <div class="btn btn-primary btn-block">
+      <%= link_to 'Show me another random character!', random_katakana_path %>
+    </div>
+    <div class="card">
+      <p class="card-text"><%= @random_character.character %></p>
+      <p class="card-answer collapse"><%= @random_character.roumaji %></p>
+      <button data-toggle="collapse" data-target=".card-answer">Show/Hide Answer</button>
+    </div>
+  </div>
+</div>
