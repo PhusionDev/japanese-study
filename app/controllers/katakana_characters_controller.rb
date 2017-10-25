@@ -18,12 +18,7 @@ class KatakanaCharactersController < ApplicationController
 
   def random_character
     count = KatakanaCharacter.count
-    x = 1
-    while @random_character.nil?
-      @random_character = KatakanaCharacter.find_by id: rand(count)
-      x++
-      x > 3 ? break : nil
-    end
+    @random_character = KatakanaCharacter.find_by id: rand(count)
     render 'random'
   end
 end
